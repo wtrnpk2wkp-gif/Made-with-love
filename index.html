@@ -1,0 +1,457 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ffeaf1">
+<title>هدية صغيرة لعمار ❤️</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Tahoma, Arial, sans-serif;
+  text-align: center;
+  color: #c52e68;
+  background: radial-gradient(
+    ellipse at center,
+    #fff7fa 0%,
+    #ffeaf1 55%,
+    #ffdce8 100%
+  );
+  overflow-x: hidden;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 30px 18px 45px;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  font-size: clamp(28px, 6vw, 40px);
+  line-height: 1.6;
+  margin: 10px 0;
+}
+
+.intro {
+  font-size: 21px;
+  line-height: 1.9;
+}
+
+.hint {
+  font-size: 18px;
+}
+
+.heart {
+  position: fixed;
+  color: #f47da5;
+  opacity: .7;
+  pointer-events: none;
+  animation: float 4s ease-in-out infinite;
+}
+
+.heart.one {
+  top: 15%;
+  left: 9%;
+  font-size: 32px;
+}
+
+.heart.two {
+  top: 30%;
+  right: 8%;
+  font-size: 27px;
+  animation-delay: 1s;
+}
+
+.heart.three {
+  bottom: 20%;
+  left: 12%;
+  font-size: 35px;
+  animation-delay: 2s;
+}
+
+.heart.four {
+  bottom: 12%;
+  right: 10%;
+  font-size: 28px;
+  animation-delay: .5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) rotate(-8deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(8deg);
+  }
+}
+
+.gift-area {
+  min-height: 285px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px auto;
+}
+
+.gift-button {
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+  filter: drop-shadow(0 15px 16px #c52e6825);
+}
+
+.gift {
+  width: 280px;
+  max-width: 75vw;
+  height: 235px;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 9%;
+  width: 82%;
+  height: 65%;
+  border: 2px solid #f8a6c0;
+  border-radius: 8px 8px 16px 16px;
+  background: linear-gradient(
+    100deg,
+    #ed6f9a,
+    #ff9fbd 48%,
+    #e95788
+  );
+}
+
+.ribbon-vertical {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 42%;
+  width: 16%;
+  height: 65%;
+  background: linear-gradient(
+    90deg,
+    #fff0f5,
+    #ffd4e2,
+    #fff2f6
+  );
+}
+
+.ribbon-horizontal {
+  position: absolute;
+  z-index: 4;
+  top: 31%;
+  left: 0;
+  width: 100%;
+  height: 12%;
+  border-radius: 5px;
+  background: linear-gradient(
+    #fff0f5,
+    #ffc6d9,
+    #fff1f5
+  );
+}
+
+.lid {
+  position: absolute;
+  z-index: 3;
+  top: 26%;
+  left: 4%;
+  width: 92%;
+  height: 24%;
+  border: 2px solid #f9b4ca;
+  border-radius: 10px;
+  background: linear-gradient(
+    100deg,
+    #ff9fbd,
+    #ffbad0 48%,
+    #ef729d
+  );
+  transform-origin: 15% 100%;
+  transition: transform .75s ease;
+}
+
+.bow {
+  position: absolute;
+  z-index: 5;
+  top: 3%;
+  left: 50%;
+  width: 125px;
+  height: 70px;
+  transform: translateX(-50%);
+  transition: transform .75s ease;
+}
+
+.loop {
+  position: absolute;
+  top: 8px;
+  width: 63px;
+  height: 48px;
+  border: 10px solid #f56e9a;
+  background: #ffb4cb;
+}
+
+.loop.left {
+  left: 0;
+  border-radius: 80% 20% 65% 35%;
+  transform: rotate(28deg);
+}
+
+.loop.right {
+  right: 0;
+  border-radius: 20% 80% 35% 65%;
+  transform: rotate(-28deg);
+}
+
+.knot {
+  position: absolute;
+  left: 50%;
+  top: 24px;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 26px;
+  border-radius: 7px;
+  background: #f26b98;
+  border: 2px solid #ffc1d5;
+}
+
+.box-heart {
+  position: absolute;
+  z-index: 3;
+  top: 54%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: #fff0f5;
+}
+
+.gift-button.open .lid {
+  transform: translate(-18px, -75px) rotate(-17deg);
+}
+
+.gift-button.open .bow {
+  transform: translate(-50%, -78px) rotate(-12deg);
+}
+
+.action-button {
+  display: inline-block;
+  margin: 18px auto 30px;
+  padding: 13px 23px;
+  border: 2px solid #ffabc5;
+  border-radius: 999px;
+  color: #d83f77;
+  font-size: 18px;
+  font-weight: bold;
+  background: #fff8fb;
+  cursor: pointer;
+  box-shadow: 0 5px 15px #e84e8712;
+}
+
+.letter-wrap {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(12px);
+  transition: max-height .8s ease, opacity .5s ease,
+              transform .5s ease;
+}
+
+.letter-wrap.show {
+  max-height: 750px;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter {
+  max-width: 540px;
+  margin: 0 auto 20px;
+  padding: 28px 20px;
+  border: 2px solid #ffb4cb;
+  border-radius: 14px;
+  background: linear-gradient(145deg, #fffafd, #fff0f6);
+  box-shadow: 0 13px 35px #c72f681b;
+  line-height: 2.1;
+}
+
+.letter-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0 0 18px;
+}
+
+.message {
+  font-size: clamp(18px, 4.5vw, 23px);
+  white-space: pre-line;
+  margin: 0;
+}
+
+.signature {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 22px;
+}
+
+footer {
+  margin-top: 20px;
+  color: #d9678e;
+  font-size: 15px;
+}
+
+@media (max-width: 420px) {
+  main {
+    padding-top: 24px;
+  }
+
+  .gift {
+    height: 220px;
+  }
+
+  .letter {
+    padding: 24px 16px;
+  }
+
+  .action-button {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="heart one">♥</div>
+<div class="heart two">♡</div>
+<div class="heart three">♥</div>
+<div class="heart four">♡</div>
+
+<main>
+
+  <div style="font-size:32px; letter-spacing:10px;">
+    — ♡ —
+  </div>
+
+  <h1>عشان إنت حبيبي ❤️</h1>
+
+  <p class="intro">
+    في حاجة صغيرة مستنياك جوّه الهدية دي…
+  </p>
+
+  <p class="hint">دوس عليها يا روحي 🎀</p>
+
+  <div class="gift-area">
+    <button
+      class="gift-button"
+      id="giftButton"
+      aria-label="افتح الهدية"
+    >
+      <div class="gift">
+        <div class="box"></div>
+        <div class="ribbon-vertical"></div>
+        <div class="box-heart">♡</div>
+        <div class="lid"></div>
+        <div class="ribbon-horizontal"></div>
+
+        <div class="bow">
+          <span class="loop left"></span>
+          <span class="loop right"></span>
+          <span class="knot"></span>
+        </div>
+      </div>
+    </button>
+  </div>
+
+  <button class="action-button" id="openButton">
+    ☝🏻 دوس هنا عشان تفتح هديتك ♥
+  </button>
+
+  <section class="letter-wrap" id="letterWrap">
+
+    <div class="letter">
+
+      <p class="letter-title">
+        ♥ من قلبي لقلبك ♥
+      </p>
+
+      <p class="message">أقر أنا شروق حبيبتك بغلطتي،
+وإنه مكانش ينفع أعمل كده،
+وأعتذر عما بدر مني.
+عديهالي يا حياتي، مقدرش على زعلك 🥹</p>
+
+      <p style="font-size:23px; color:#ed6c98;">
+        — ♥ —
+      </p>
+
+      <p class="signature">
+        توقيع: حبيبة عمار ❤️
+      </p>
+
+    </div>
+
+    <button class="action-button" id="replayButton">
+      ↻ نفتحها تاني؟ ♥
+    </button>
+
+  </section>
+
+  <footer>معمول بحب ❤️</footer>
+
+</main>
+
+<script>
+const giftButton = document.getElementById("giftButton");
+const openButton = document.getElementById("openButton");
+const letterWrap = document.getElementById("letterWrap");
+const replayButton = document.getElementById("replayButton");
+
+function openGift() {
+  giftButton.classList.add("open");
+  letterWrap.classList.add("show");
+
+  openButton.textContent = "💗 هديتك اتفتحت يا حبيبي";
+
+  setTimeout(() => {
+    letterWrap.scrollIntoView({
+      behavior: "smooth",
+      block: "center"
+    });
+  }, 350);
+}
+
+function resetGift() {
+  giftButton.classList.remove("open");
+  letterWrap.classList.remove("show");
+
+  openButton.textContent =
+    "☝🏻 دوس هنا عشان تفتح هديتك ♥";
+
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+
+giftButton.addEventListener("click", openGift);
+openButton.addEventListener("click", openGift);
+replayButton.addEventListener("click", resetGift);
+</script>
+
+</body>
+</html>
